@@ -1,13 +1,14 @@
 'use client'
 
 import Link from 'next/link'
-import Home from '@/components/main/home'
 import {motion} from 'framer-motion'
 import Image from 'next/image'
 
-export default function Webinfo() {
+import Skill from '@/components/main/skill'
+
+export default function Skillinfo() {
     return(
-        <Home>
+        <Skill>
         <motion.main
     initial={{opacity:0}}
     animate={{opacity:1}} 
@@ -22,7 +23,7 @@ export default function Webinfo() {
                 />
       <div className='px-8 grow'>
          <div className='text-white font-bold text-3xl ml-6 mt-2'>
-          Website Information
+          Skills
          </div>
 
          <div className='ml-6 mt-8 text-white'>
@@ -43,30 +44,24 @@ export default function Webinfo() {
   
       <tbody>
         <tr>
-          <td className='font-bold text-red-600 text-base pb-6'>Objectve</td>
-          <td className='px-2 pb-6'>-</td>
-          <td className='font-semibold text-white  text-base pl-2'>This website contains Information about me and my software development skills. It is also showcasing the projects that i have created.</td>
-        </tr>
-        <tr>
-        <td className='font-bold text-white  text-base '>Tools used</td>
-        <td className='px-2 pb-6'>-</td>
-        <td className='font-semibold text-white  text-base pl-6 pt-6'>
-        <ul className='list-disc'>
-          <li>Next.js</li>
-          <li>Tailwind css</li>
-          <li>Framer Motion</li>
+          {/* <td className='font-bold text-white text-base '>Skills</td>
+          <td className='px-2 '>-</td> */}
+          <td className='font-semibold text-white  text-base pl-4'>
+          <ul className='list-disc'>
+          <li>Back End Web Developing</li>
+          <li>Front End Web Developing</li>
+          <li>Android Development</li>
+          <li>Proficient in JavaScript</li>
+          <li>Skilled in Java</li>
+          <li>Familiar with C, C++, PHP and Dart</li>
+          <li>Have a good practice of Next.js and React.js and Flutter </li>
+          <li>Basic knowledge of Laravel </li>
+          <li>Familiar with MongoDB, Firebase and MySql </li>
+          
         </ul>
-        </td>
-        </tr>
-        <tr>
-        <td className='font-bold text-white  text-base pt-6'>Source code</td>
-        <td className='px-2'>-</td>
-          <td className='font-semibold text-red-500  text-base pl-3'>
-          <Link href={'https://github.com/Ejaz0000/porfolio_website.git'}>
-          https://github.com/Ejaz0000/porfolio_website.git
-            </Link>
           </td>
         </tr>
+        
       </tbody>
     </table>
 
@@ -84,7 +79,7 @@ export default function Webinfo() {
         
     </motion.main>
 
-    </Home>
+    </Skill>
     );
     
 };

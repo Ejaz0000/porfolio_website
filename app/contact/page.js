@@ -1,13 +1,13 @@
 'use client'
 
 import Link from 'next/link'
-import Home from '@/components/main/home'
 import {motion} from 'framer-motion'
 import Image from 'next/image'
+import Contact from '@/components/main/contact'
 
-export default function Webinfo() {
+export default function Contactinfo() {
     return(
-        <Home>
+        <Contact>
         <motion.main
     initial={{opacity:0}}
     animate={{opacity:1}} 
@@ -22,7 +22,7 @@ export default function Webinfo() {
                 />
       <div className='px-8 grow'>
          <div className='text-white font-bold text-3xl ml-6 mt-2'>
-          Website Information
+          Contact Information
          </div>
 
          <div className='ml-6 mt-8 text-white'>
@@ -43,27 +43,32 @@ export default function Webinfo() {
   
       <tbody>
         <tr>
-          <td className='font-bold text-red-600 text-base pb-6'>Objectve</td>
-          <td className='px-2 pb-6'>-</td>
-          <td className='font-semibold text-white  text-base pl-2'>This website contains Information about me and my software development skills. It is also showcasing the projects that i have created.</td>
+          <td className='font-bold text-white text-base '>E-mail</td>
+          <td className='px-2 '>-</td>
+          <td className='font-semibold text-white  text-base pl-2'>ejahmed999@gmail.com</td>
         </tr>
         <tr>
-        <td className='font-bold text-white  text-base '>Tools used</td>
-        <td className='px-2 pb-6'>-</td>
-        <td className='font-semibold text-white  text-base pl-6 pt-6'>
-        <ul className='list-disc'>
-          <li>Next.js</li>
-          <li>Tailwind css</li>
-          <li>Framer Motion</li>
-        </ul>
+        <td className='font-bold text-white  text-base pt-6'>Phone</td>
+        <td className='px-2 pt-6'>-</td>
+        <td className='font-semibold text-white  text-base pl-2 pt-6'>
+        +8801819146100
         </td>
         </tr>
         <tr>
-        <td className='font-bold text-white  text-base pt-6'>Source code</td>
-        <td className='px-2'>-</td>
-          <td className='font-semibold text-red-500  text-base pl-3'>
-          <Link href={'https://github.com/Ejaz0000/porfolio_website.git'}>
-          https://github.com/Ejaz0000/porfolio_website.git
+        <td className='font-bold text-white  text-base pt-6'>Lindin</td>
+        <td className='px-2 pt-6'>-</td>
+          <td className='font-semibold text-red-500  text-base pl-3 pt-6'>
+          <Link href={'https://www.linkedin.com/in/ejaz-ahmed-9939b027b/'}>
+           Lindin Profile
+            </Link>
+          </td>
+        </tr>
+        <tr>
+        <td className='font-bold text-white  text-base pt-6'>FaceBook</td>
+        <td className='px-2 pt-6'>-</td>
+          <td className='font-semibold text-red-500  text-base pl-3 pt-6'>
+          <Link href={'https://www.facebook.com/profile.php?id=100017262407131'}>
+          FaceBook Profile
             </Link>
           </td>
         </tr>
@@ -84,7 +89,7 @@ export default function Webinfo() {
         
     </motion.main>
 
-    </Home>
+    </Contact>
     );
     
 };

@@ -18,7 +18,7 @@ export default function Sidebar({navs,height}) {
 
     const pathname = usePathname()
 
-    if(pathname.includes('/webinfo')){
+    if(pathname.includes('/webinfo')||pathname.includes('/myinfo')||pathname.includes('/project01')||pathname.includes('/project02')||pathname.includes('/project03')||pathname.includes('/project04')||pathname.includes('/project05')||pathname.includes('/project06')||pathname.includes('/project07')){
       sidebarAnimate = false;
     }else{
       sidebarAnimate = true;
@@ -50,12 +50,18 @@ export default function Sidebar({navs,height}) {
         animate={{ opacity: 1}}
         transition={{ delay: 0.8 }}
         
-        className='mt-2 p-2 border-sidebar  border-4 rounded-t-full rounded-b-full'>
+        className='mt-2 '>
+           <motion.div 
+           
+           initial={{ opacity: 0}}
+            animate={{ opacity: 1}}
+            transition={{ delay: 0.8 }}
+           className="p-2 border-sidebar  border-4 rounded-t-full rounded-b-full">
             <motion.div
              initial={{ height: 200 }}
              animate={{ height: height }}
              transition={{ delay: 0.8,duration: 0.8 }}
-             className={` pl-0 pr-0 pt-20  border-4 border-red-600 rounded-t-full rounded-b-full flex flex-col ${justify}`}>
+             className={` pl-0 pr-0 pt-20  border-4 border-red-600 rounded-t-full rounded-b-full flex flex-col ${justify} bg-slate-500 bg-opacity-20`}>
                 
             {isVisible && 
             <motion.nav 
@@ -90,15 +96,24 @@ export default function Sidebar({navs,height}) {
                 />
            </motion.div> 
            </motion.div>
+           </motion.div>
         </motion.aside>
     )
             }
     else{
+      var sidebar;
+      if(height==384){
+        sidebar = "sidebar_A"
+      }
+      else{
+        sidebar = "sidebar_B"
+      }
       return (
-        <aside className='mt-2 p-2 border-sidebar  border-4 rounded-t-full rounded-b-full'>
+        <aside className='mt-2'>
+          <div className=' p-2 border-sidebar  border-4 rounded-t-full rounded-b-full'>
             <motion.div 
             
-            className={` pl-0 pr-0 pt-20 h-96  border-4 border-red-600 rounded-t-full rounded-b-full flex flex-col justify-between`}>
+            className={` pl-0 pr-0 pt-20 ${sidebar}  border-4 border-red-600 rounded-t-full rounded-b-full flex flex-col justify-between`}>
                 
           
             <nav 
@@ -126,6 +141,7 @@ export default function Sidebar({navs,height}) {
                 />
            </div> 
            </motion.div>
+           </div>
         </aside>
     )
     }

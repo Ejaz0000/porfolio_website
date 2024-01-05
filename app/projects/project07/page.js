@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Project01() {
+export default function Project07() {
     return(
         <Projects>
         <motion.main
@@ -23,14 +23,14 @@ export default function Project01() {
                 />
       <div className='px-8 grow'>
          <div className='text-white font-bold text-3xl ml-6 mt-2'>
-          Club Management Website
+          E-Commerce Website
          </div>
 
          <div className='text-white ml-6 mt-8 text-base '>
           <div className='flex gap-2'>
             <div className='font-semibold'>Title</div>
             <div className='font-semibold ml-4'>-</div>
-            <div className='font-semibold'>CMS</div>
+            <div className='font-semibold'>E-com site</div>
           </div>
           <div className='flex gap-2'>
             <div className='font-semibold'>Type</div>
@@ -40,16 +40,16 @@ export default function Project01() {
           <div className='flex gap-2'>
             <div className='font-semibold'>Status</div>
             <div className='font-semibold'>-</div>
-            <div>Completed</div>
+            <div>Ongoing</div>
           </div>
           <div className='my-4'>
           <div className='text-red-600 font-bold'>Description</div>
-          <div className='font-semibold'>A website to manage the clubs of a institution. Where students will be able to join clubs and communicate within a group through chatbox. Club presidents will be able to post notice and add events to calender which will be visivle to students.</div>
+          <div className='font-semibold'>A e-comerce website for clothing with admin panel.</div>
           </div>
           <div className='text-red-600 font-bold'>Images</div>
           <div className='ml-6 mt-4'>
           <Image
-                src="/images/club_01.png"
+                src="/images/ec_01.png"
                 width={700}
                 height={700}
                 className='border-4 border-sky-300 rounded-lg'
@@ -58,46 +58,30 @@ export default function Project01() {
           </div>
           <div className='ml-6 mt-4'>
           <Image
-                src="/images/club_02.png"
+                src="/images/ec_02.png"
                 width={700}
                 height={700}
                 className='border-4 border-sky-300 rounded-lg'
                 alt="spin"
                 />
           </div>
-          <div className='ml-6 mt-4'>
-          <Image
-                src="/images/club_03.png"
-                width={700}
-                height={700}
-                className='border-4 border-sky-300 rounded-lg'
-                alt="spin"
-                />
-          </div>
-          <div className='ml-6 mt-4'>
-          <Image
-                src="/images/club_04.png"
-                width={700}
-                height={700}
-                className='border-4 border-sky-300 rounded-lg'
-                alt="spin"
-                />
-          </div>
+          
           <table>
       
           <tbody>
             <tr>
-              <td className='font-semibold text-base pb-24'>Features</td>
-              <td className='px-2 pb-24'>-</td>
+              <td className='font-semibold text-base pb-0'>Features</td>
+              <td className='px-2 pb-0'>-</td>
               <td className='font-semibold text-white  text-base pl-6 pt-6'>
-                  <ul className='list-disc'>
+                  {/* <ul className='list-disc'>
                   <li>Multiple clubs</li>
                   <li>Admin panel to manage president information</li>
                   <li>Chat box for every club</li>
                   <li>Calender and notice board</li>
                   <li>Search box</li>
                   <li>Club joinning request handled by president</li>
-                </ul>
+                </ul> */}
+                * Workin on process *
               </td>
             </tr>
             <tr>
@@ -105,9 +89,9 @@ export default function Project01() {
             <td className='px-2 pb-6'>-</td>
             <td className='font-semibold text-white  text-base pl-6 pt-6'>
             <ul className='list-disc'>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript and PHP</li>
+            <li>Next.js</li>
+          <li>Tailwind Css</li>
+          <li>Google authentication</li>
             </ul>
             </td>
             </tr>
@@ -115,8 +99,8 @@ export default function Project01() {
             <td className='font-bold text-white  text-base pt-4'>Source code</td>
             <td className='px-2 pt-4'>-</td>
               <td className='font-semibold text-red-600  text-base pl-3 pt-4'>
-              <Link href={'https://github.com/Ejaz0000/Club-management-web.git'}>
-              https://github.com/Ejaz0000/Club-management-web.git
+              <Link href={'https://github.com/Ejaz0000/E-com-admin.git'}>
+              https://github.com/Ejaz0000/E-com-admin.git
                 </Link>
               </td>
             </tr>

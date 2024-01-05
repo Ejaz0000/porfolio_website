@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Project01() {
+export default function Project05() {
     return(
         <Projects>
         <motion.main
@@ -23,19 +23,19 @@ export default function Project01() {
                 />
       <div className='px-8 grow'>
          <div className='text-white font-bold text-3xl ml-6 mt-2'>
-          Club Management Website
+          Weather App
          </div>
 
          <div className='text-white ml-6 mt-8 text-base '>
           <div className='flex gap-2'>
             <div className='font-semibold'>Title</div>
             <div className='font-semibold ml-4'>-</div>
-            <div className='font-semibold'>CMS</div>
+            <div className='font-semibold'>Sky Stats</div>
           </div>
           <div className='flex gap-2'>
             <div className='font-semibold'>Type</div>
             <div className='font-semibold ml-3'>-</div>
-            <div>Web Application</div>
+            <div>Mobile Application</div>
           </div>
           <div className='flex gap-2'>
             <div className='font-semibold'>Status</div>
@@ -44,70 +44,50 @@ export default function Project01() {
           </div>
           <div className='my-4'>
           <div className='text-red-600 font-bold'>Description</div>
-          <div className='font-semibold'>A website to manage the clubs of a institution. Where students will be able to join clubs and communicate within a group through chatbox. Club presidents will be able to post notice and add events to calender which will be visivle to students.</div>
+          <div className='font-semibold'>A weather app for weather information of users current location and any other location searched by the user.</div>
           </div>
           <div className='text-red-600 font-bold'>Images</div>
-          <div className='ml-6 mt-4'>
+          <div className='ml-6 mt-4 flex gap-12'>
           <Image
-                src="/images/club_01.png"
-                width={700}
-                height={700}
+                src="/images/sky_02.jpg"
+                width={200}
+                height={200}
+                className='border-4 border-sky-300 rounded-lg'
+                alt="spin"
+                />
+            
+            <Image
+                src="/images/sky_01.jpg"
+                width={200}
+                height={200}
                 className='border-4 border-sky-300 rounded-lg'
                 alt="spin"
                 />
           </div>
-          <div className='ml-6 mt-4'>
-          <Image
-                src="/images/club_02.png"
-                width={700}
-                height={700}
-                className='border-4 border-sky-300 rounded-lg'
-                alt="spin"
-                />
-          </div>
-          <div className='ml-6 mt-4'>
-          <Image
-                src="/images/club_03.png"
-                width={700}
-                height={700}
-                className='border-4 border-sky-300 rounded-lg'
-                alt="spin"
-                />
-          </div>
-          <div className='ml-6 mt-4'>
-          <Image
-                src="/images/club_04.png"
-                width={700}
-                height={700}
-                className='border-4 border-sky-300 rounded-lg'
-                alt="spin"
-                />
-          </div>
+          
           <table>
       
           <tbody>
             <tr>
-              <td className='font-semibold text-base pb-24'>Features</td>
-              <td className='px-2 pb-24'>-</td>
-              <td className='font-semibold text-white  text-base pl-6 pt-6'>
+            <td className='font-semibold text-base pb-6'>Features</td>
+          <td className='px-2 pb-6'>-</td>
+          <td className='font-semibold text-white  text-base pl-6 pt-6'>
                   <ul className='list-disc'>
-                  <li>Multiple clubs</li>
-                  <li>Admin panel to manage president information</li>
-                  <li>Chat box for every club</li>
-                  <li>Calender and notice board</li>
-                  <li>Search box</li>
-                  <li>Club joinning request handled by president</li>
+                  <li>Show Temperture, humidity and wind Speed</li>
+                  <li>Search location</li>
+                  <li>current location</li>
+                
                 </ul>
               </td>
             </tr>
             <tr>
-            <td className='font-bold text-white  text-base pb-6'>Tools used</td>
-            <td className='px-2 pb-6'>-</td>
+            <td className='font-bold text-white  text-base pb-6 pt-6'>Tools used</td>
+            <td className='px-2 pb-6 pt-6'>-</td>
             <td className='font-semibold text-white  text-base pl-6 pt-6'>
             <ul className='list-disc'>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript and PHP</li>
+              <li>Flutter</li>
+              <li>Weather Api</li>
+            
             </ul>
             </td>
             </tr>
@@ -115,8 +95,8 @@ export default function Project01() {
             <td className='font-bold text-white  text-base pt-4'>Source code</td>
             <td className='px-2 pt-4'>-</td>
               <td className='font-semibold text-red-600  text-base pl-3 pt-4'>
-              <Link href={'https://github.com/Ejaz0000/Club-management-web.git'}>
-              https://github.com/Ejaz0000/Club-management-web.git
+              <Link href={'https://github.com/Ejaz0000/Sky_stats.git'}>
+              https://github.com/Ejaz0000/Sky_stats.git
                 </Link>
               </td>
             </tr>

@@ -5,7 +5,8 @@
 
 .bg{
     background-image: url("../public/images/web\ BG.png");
-  
+    
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -30,4 +31,12 @@
     border-color: rgb(90, 27, 43);
     border-right: solid rgb(220, 38, 38) 4px;
     border-left: solid rgb(220, 38, 38) 4px;
+}
+
+.sidebar_A{
+    height: 384px;
+}
+
+.sidebar_B{
+    height: 660px;
 }
