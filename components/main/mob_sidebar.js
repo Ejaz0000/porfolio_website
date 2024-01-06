@@ -56,7 +56,7 @@ export default function MoblieSidebar({navs,width}) {
            initial={{ opacity: 0}}
             animate={{ opacity: 1}}
             transition={{ delay: 0.8 }}
-           className="p-2 border-mobile_sidebar  border-4 rounded-t-full rounded-b-full w-fit">
+           className="p-1 border-mobile_sidebar  border-4 rounded-t-full rounded-b-full w-fit">
             <motion.div
              initial={{ width: 100 }}
              animate={{ width: width }}
@@ -66,7 +66,7 @@ export default function MoblieSidebar({navs,width}) {
             {isVisible && 
             <motion.nav 
             
-            className='flex flex-row gap-0 py-0'>
+            className='flex flex-row gap-0 py-0 ml-2'>
                 
                 {navs.map((item)=>(
                     <motion.div
@@ -74,7 +74,7 @@ export default function MoblieSidebar({navs,width}) {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay:item.delay,duration: 0.6 }}
-                    className='border-2  hover:bg-red-500  rounded-full py-1 px-2 ml-3 my-2 text-sm'
+                    className='border-2  hover:bg-red-500  rounded-full py-1 px-1 ml-3 my-2 text-sm'
                 >
                     <Link href={item.href} className="text-gray-100">
                     {item.name}
@@ -106,7 +106,7 @@ export default function MoblieSidebar({navs,width}) {
       if(width==240){
         sidebar = "mobile_sidebar_A"
       }
-      else if(width==345){
+      else if(width==310){
         sidebar = "mobile_sidebar_B"
       }
       else{
@@ -114,7 +114,7 @@ export default function MoblieSidebar({navs,width}) {
       }
       return (
         <aside className='mt-2 sm:hidden'>
-          <div className=' p-2 border-mobile_sidebar  border-4 rounded-t-full rounded-b-full w-fit'>
+          <div className=' p-1 border-mobile_sidebar  border-4 rounded-t-full rounded-b-full w-fit'>
             <motion.div 
             
             className={` pl-0 pr-0 pt-0 ${sidebar}  border-4 border-red-600 rounded-t-full rounded-b-full flex flex-row justify-between bg-slate-500 bg-opacity-20`}>
@@ -122,10 +122,10 @@ export default function MoblieSidebar({navs,width}) {
           
             <nav 
             
-            className='flex flex-row gap-0'>
+            className='flex flex-row gap-0 ml-2'>
                 
                 {navs.map((item)=>(
-                    <div key={item.name} className='border-2  hover:bg-red-500  rounded-full py-1 px-2 ml-3 my-2 text-sm'
+                    <div key={item.name} className='border-2  hover:bg-red-500  rounded-full py-1 px-1 ml-3 my-2 text-sm'
                 >
                     <Link href={item.href} className="text-gray-100">
                     {item.name}

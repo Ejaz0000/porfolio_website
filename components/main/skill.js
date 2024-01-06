@@ -14,7 +14,7 @@ export default function Skill({children}) {
   ];
   return (
     <Layout>
-      <div className='flex sm:flex-row flex-col w-3/4 sm:pl-10'>
+      <div className='flex sm:flex-row flex-col sm:w-3/4 w-full sm:pl-10 px-2'>
       <MoblieSidebar navs = {Skillnav} width = {180}/>
       <Sidebar navs = {Skillnav} height = {384}/>
       {children}

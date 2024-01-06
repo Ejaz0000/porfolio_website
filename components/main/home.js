@@ -14,7 +14,7 @@ export default function Home({children}) {
   ];
   return (
     <Layout>
-      <div className='flex sm:flex-row flex-col sm:w-3/4 w-4/5 sm:pl-10 px-2'>
+      <div className='flex sm:flex-row flex-col sm:w-3/4 w-full sm:pl-10 px-2'>
         <MoblieSidebar navs = {Homenav} width = {240}/>
       <Sidebar navs = {Homenav} height = {384}/>
       {children}

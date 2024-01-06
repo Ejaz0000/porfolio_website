@@ -20,12 +20,12 @@ export default function Contactinfo() {
                 height={100}
                 alt="spin"
                 />
-      <div className='px-8 grow'>
+      <div className='sm:px-8 grow'>
          <div className='text-white font-bold text-3xl ml-6 mt-2'>
           Contact Information
          </div>
 
-         <div className='ml-6 mt-8 text-white'>
+         <div className='sm:ml-6 ml-4 mt-8 text-white'>
           {/* <div className='text-white text-base flex gap-2'>
             <div className='font-bold text-red-500'> Objectve - </div>
             <div className='font-semibold'> hbjhbj jhjhbjbjbh hjbhjbhjbh</div>
@@ -45,19 +45,19 @@ export default function Contactinfo() {
         <tr>
           <td className='font-bold text-white text-base '>E-mail</td>
           <td className='px-2 '>-</td>
-          <td className='font-semibold text-white  text-base pl-2'>ejahmed999@gmail.com</td>
+          <td className='font-semibold text-white  sm:text-base text-sm sm:pl-2'>ejahmed999@gmail.com</td>
         </tr>
         <tr>
         <td className='font-bold text-white  text-base pt-6'>Phone</td>
         <td className='px-2 pt-6'>-</td>
-        <td className='font-semibold text-white  text-base pl-2 pt-6'>
+        <td className='font-semibold text-white  sm:text-base text-sm sm:pl-2 pt-6'>
         +8801819146100
         </td>
         </tr>
         <tr>
         <td className='font-bold text-white  text-base pt-6'>Lindin</td>
         <td className='px-2 pt-6'>-</td>
-          <td className='font-semibold text-red-500  text-base pl-3 pt-6'>
+          <td className='font-semibold text-red-500  sm:text-base text-sm sm:pl-3 pt-6'>
           <Link href={'https://www.linkedin.com/in/ejaz-ahmed-9939b027b/'}>
            Lindin Profile
             </Link>
@@ -66,7 +66,7 @@ export default function Contactinfo() {
         <tr>
         <td className='font-bold text-white  text-base pt-6'>FaceBook</td>
         <td className='px-2 pt-6'>-</td>
-          <td className='font-semibold text-red-500  text-base pl-3 pt-6'>
+          <td className='font-semibold text-red-500  sm:text-base text-sm sm:pl-3 pt-6'>
           <Link href={'https://www.facebook.com/profile.php?id=100017262407131'}>
           FaceBook Profile
             </Link>

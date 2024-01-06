@@ -21,7 +21,7 @@ export default function Project05() {
                 height={100}
                 alt="spin"
                 />
-      <div className='px-8 grow'>
+      <div className='sm:px-8 px-4 grow'>
          <div className='text-white font-bold text-3xl ml-6 mt-2'>
           Weather App
          </div>

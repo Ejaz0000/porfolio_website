@@ -14,7 +14,7 @@ export default function Contact({children}) {
   ];
   return (
     <Layout>
-      <div className='flex sm:flex-row flex-col w-3/4 sm:pl-10'>
+      <div className='flex sm:flex-row flex-col sm:w-3/4 w-full sm:pl-10 px-2'>
       <MoblieSidebar navs = {Contactnav} width = {180}/>
 
       <Sidebar navs = {Contactnav} height = {384}/>

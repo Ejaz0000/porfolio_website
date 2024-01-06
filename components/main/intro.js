@@ -19,7 +19,7 @@ export default function Intro() {
 
 
       return(
-         <div className='flex flex-row justify-between w-3/4 sm:px-9 mt-8'>
+         <div className='flex flex-row justify-between w-3/4 sm:px-9 mt-8 ml-2 sm:ml-0'>
           <div className='flex flex-col'>
              <motion.div
               initial={shouldAnimate ? { opacity: 0 } : {}}

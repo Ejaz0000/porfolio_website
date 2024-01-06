@@ -32,8 +32,8 @@ export default function Projects({children}) {
   ];
   return (
     <Layout>
-      <div className='flex sm:flex-row flex-col w-3/4 sm:pl-10'>
-      <MoblieSidebar navs = {mob_nav} width = {345}/>
+      <div className='flex sm:flex-row flex-col sm:w-3/4 w-full sm:pl-10 px-2'>
+      <MoblieSidebar navs = {mob_nav} width = {310}/>
       <Sidebar navs = {Projnav} height = {660}/>
       {children}
     </div>
