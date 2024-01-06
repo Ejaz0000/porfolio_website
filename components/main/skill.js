@@ -2,6 +2,7 @@
 
 import Layout from '@/components/main/layout'
 import Sidebar from '@/components/main/sidebar'
+import MoblieSidebar from './mob_sidebar';
 
 
 
@@ -13,7 +14,8 @@ export default function Skill({children}) {
   ];
   return (
     <Layout>
-      <div className='flex flex-row w-3/4 pl-10'>
+      <div className='flex sm:flex-row flex-col w-3/4 sm:pl-10'>
+      <MoblieSidebar navs = {Skillnav} width = {180}/>
       <Sidebar navs = {Skillnav} height = {384}/>
       {children}
     </div>

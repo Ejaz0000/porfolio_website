@@ -2,6 +2,7 @@
 
 import Layout from '@/components/main/layout'
 import Sidebar from '@/components/main/sidebar'
+import MoblieSidebar from './mob_sidebar';
 
 
 
@@ -13,7 +14,8 @@ export default function Home({children}) {
   ];
   return (
     <Layout>
-      <div className='flex flex-row w-3/4 pl-10'>
+      <div className='flex sm:flex-row flex-col sm:w-3/4 w-4/5 sm:pl-10 px-2'>
+        <MoblieSidebar navs = {Homenav} width = {240}/>
       <Sidebar navs = {Homenav} height = {384}/>
       {children}
     </div>

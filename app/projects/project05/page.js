@@ -44,10 +44,10 @@ export default function Project05() {
           </div>
           <div className='my-4'>
           <div className='text-red-600 font-bold'>Description</div>
-          <div className='font-semibold'>A weather app for weather information of users current location and any other location searched by the user.</div>
+          <div className='font-semibold sm:text-base text-sm'>A weather app for weather information of users current location and any other location searched by the user.</div>
           </div>
           <div className='text-red-600 font-bold'>Images</div>
-          <div className='ml-6 mt-4 flex gap-12'>
+          <div className='sm:ml-6 mt-4 sm:flex space-y-2 sm:space-y-0 gap-12'>
           <Image
                 src="/images/sky_02.jpg"
                 width={200}
@@ -71,7 +71,7 @@ export default function Project05() {
             <tr>
             <td className='font-semibold text-base pb-6'>Features</td>
           <td className='px-2 pb-6'>-</td>
-          <td className='font-semibold text-white  text-base pl-6 pt-6'>
+          <td className='font-semibold text-white  sm:text-base text-sm pl-6 pt-6 break-words '>
                   <ul className='list-disc'>
                   <li>Show Temperture, humidity and wind Speed</li>
                   <li>Search location</li>
@@ -83,7 +83,7 @@ export default function Project05() {
             <tr>
             <td className='font-bold text-white  text-base pb-6 pt-6'>Tools used</td>
             <td className='px-2 pb-6 pt-6'>-</td>
-            <td className='font-semibold text-white  text-base pl-6 pt-6'>
+            <td className='font-semibold text-white  sm:text-base text-sm pl-6 pt-6'>
             <ul className='list-disc'>
               <li>Flutter</li>
               <li>Weather Api</li>
@@ -94,7 +94,7 @@ export default function Project05() {
             <tr>
             <td className='font-bold text-white  text-base pt-4'>Source code</td>
             <td className='px-2 pt-4'>-</td>
-              <td className='font-semibold text-red-600  text-base pl-3 pt-4'>
+              <td className='font-semibold text-red-600  sm:text-base text-sm pl-3 pt-4 break-all'>
               <Link href={'https://github.com/Ejaz0000/Sky_stats.git'}>
               https://github.com/Ejaz0000/Sky_stats.git
                 </Link>

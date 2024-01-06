@@ -44,10 +44,10 @@ export default function Project04() {
       </div>
       <div className='my-4'>
       <div className='text-red-600 font-bold'>Description</div>
-      <div className='font-semibold'>A web platform with 3 text based games. first one is a murder mystery stroy based game. Second one is a shoping game and third one is traveling texed based game.</div>
+      <div className='font-semibold sm:text-base text-sm'>A web platform with 3 text based games. first one is a murder mystery stroy based game. Second one is a shoping game and third one is traveling texed based game.</div>
       </div>
       <div className='text-red-600 font-bold'>Images</div>
-      <div className='ml-6 mt-4'>
+      <div className='sm:ml-6 mt-4'>
       <Image
             src="/images/story_01.png"
             width={700}
@@ -56,7 +56,7 @@ export default function Project04() {
             alt="spin"
             />
       </div>
-      <div className='ml-6 mt-4'>
+      <div className='sm:ml-6 mt-4'>
       <Image
             src="/images/story_02.png"
             width={700}
@@ -65,7 +65,7 @@ export default function Project04() {
             alt="spin"
             />
       </div>
-      <div className='ml-6 mt-4'>
+      <div className='sm:ml-6 mt-4'>
       <Image
             src="/images/story_03.png"
             width={700}
@@ -74,7 +74,7 @@ export default function Project04() {
             alt="spin"
             />
       </div>
-      <div className='ml-6 mt-4'>
+      <div className='sm:ml-6 mt-4'>
       <Image
             src="/images/story_04.png"
             width={700}
@@ -83,7 +83,7 @@ export default function Project04() {
             alt="spin"
             />
       </div>
-      <div className='ml-6 mt-4'>
+      <div className='sm:ml-6 mt-4'>
       <Image
             src="/images/story_05.png"
             width={700}
@@ -96,9 +96,9 @@ export default function Project04() {
   
       <tbody>
         <tr>
-          <td className='font-semibold text-base pb-6'>Features</td>
-          <td className='px-2 pb-6'>-</td>
-          <td className='font-semibold text-white  text-base pl-6 pt-6'>
+          <td className='font-semibold text-base sm:pb-6'>Features</td>
+          <td className='px-2 sm:pb-6'>-</td>
+          <td className='font-semibold text-white  sm:text-base text-sm pl-6 pt-6'>
               <ul className='list-disc'>
               <li>3 games</li>
               <li>User authentication</li>
@@ -107,9 +107,9 @@ export default function Project04() {
           </td>
         </tr>
         <tr>
-        <td className='font-bold text-white  text-base pb-6'>Tools used</td>
-        <td className='px-2 pb-6'>-</td>
-        <td className='font-semibold text-white  text-base pl-6 pt-6'>
+        <td className='font-bold text-white  text-base sm:pb-6'>Tools used</td>
+        <td className='px-2 sm:pb-6'>-</td>
+        <td className='font-semibold text-white  sm:text-base text-sm pl-6 pt-6'>
         <ul className='list-disc'>
           <li>HTML</li>
           <li>CSS</li>
@@ -120,7 +120,7 @@ export default function Project04() {
         <tr>
         <td className='font-bold text-white  text-base pt-4'>Source code</td>
         <td className='px-2 pt-4'>-</td>
-          <td className='font-semibold text-red-600  text-base pl-3 pt-4'>
+          <td className='font-semibold text-red-600  sm:text-base text-sm pl-3 pt-4 break-all'>
           <Link href={'https://github.com/Ejaz0000/Storyteller.git'}>
           https://github.com/Ejaz0000/Storyteller.git
             </Link>

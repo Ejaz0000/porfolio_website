@@ -9,7 +9,7 @@ import { usePathname } from 'next/navigation'
 
 
 
-export default function Sidebar({navs,height}) {
+export default function MoblieSidebar({navs,width}) {
 
     const [isVisible, setIsVisible] = useState(false);
     const [justify, setjustify] = useState("justify-end");
@@ -50,30 +50,30 @@ export default function Sidebar({navs,height}) {
         animate={{ opacity: 1}}
         transition={{ delay: 0.8 }}
         
-        className='mt-2 hidden sm:block'>
+        className='mt-2 sm:hidden'>
            <motion.div 
            
            initial={{ opacity: 0}}
             animate={{ opacity: 1}}
             transition={{ delay: 0.8 }}
-           className="p-2 border-sidebar  border-4 rounded-t-full rounded-b-full">
+           className="p-2 border-mobile_sidebar  border-4 rounded-t-full rounded-b-full w-fit">
             <motion.div
-             initial={{ height: 200 }}
-             animate={{ height: height }}
+             initial={{ width: 100 }}
+             animate={{ width: width }}
              transition={{ delay: 0.8,duration: 0.8 }}
-             className={` pl-0 pr-0 pt-20  border-4 border-red-600 rounded-t-full rounded-b-full flex flex-col ${justify} bg-slate-500 bg-opacity-20`}>
+             className={` pl-0 pr-0 py-0  border-4 border-red-600 rounded-t-full rounded-b-full flex flex-row ${justify} bg-slate-500 bg-opacity-20`}>
                 
             {isVisible && 
             <motion.nav 
             
-            className='flex flex-col gap-4'>
+            className='flex flex-row gap-0 py-0'>
                 
                 {navs.map((item)=>(
                     <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay:item.delay,duration: 0.6 }}
-                    className='border-2 border-r-0  hover:bg-red-500  rounded-l-full py-2 pl-3 pr-0 ml-4'
+                    className='border-2  hover:bg-red-500  rounded-full py-1 px-2 ml-3 my-2 text-sm'
                 >
                     <Link href={item.href} className="text-gray-100">
                     {item.name}
@@ -87,7 +87,7 @@ export default function Sidebar({navs,height}) {
             <motion.div
             animate={{ rotate: 360 }} 
             transition={{ delay: 0.8,duration: 1 }} 
-            class="w-36 h-36 text-white rounded-full mt-6  inline-flex items-center justify-center  "> 
+            class="w-12 h-12 text-white rounded-full mt-0  inline-flex items-center justify-center  "> 
              <Image
                 src="/images/spin.png"
                 width={500}
@@ -102,26 +102,29 @@ export default function Sidebar({navs,height}) {
             }
     else{
       var sidebar;
-      if(height==384){
-        sidebar = "sidebar_A"
+      if(width==240){
+        sidebar = "mobile_sidebar_A"
+      }
+      else if(width==345){
+        sidebar = "mobile_sidebar_B"
       }
       else{
-        sidebar = "sidebar_B"
+        sidebar = "mobile_sidebar_C"
       }
       return (
-        <aside className='mt-2 hidden sm:block'>
-          <div className=' p-2 border-sidebar  border-4 rounded-t-full rounded-b-full'>
+        <aside className='mt-2 sm:hidden'>
+          <div className=' p-2 border-mobile_sidebar  border-4 rounded-t-full rounded-b-full w-fit'>
             <motion.div 
             
-            className={` pl-0 pr-0 pt-20 ${sidebar}  border-4 border-red-600 rounded-t-full rounded-b-full flex flex-col justify-between`}>
+            className={` pl-0 pr-0 pt-0 ${sidebar}  border-4 border-red-600 rounded-t-full rounded-b-full flex flex-row justify-between bg-slate-500 bg-opacity-20`}>
                 
           
             <nav 
             
-            className='flex flex-col gap-4'>
+            className='flex flex-row gap-0'>
                 
                 {navs.map((item)=>(
-                    <div className='border-2 border-r-0  hover:bg-red-500  rounded-l-full py-2 pl-3 pr-0 ml-4'
+                    <div className='border-2  hover:bg-red-500  rounded-full py-1 px-2 ml-3 my-2 text-sm'
                 >
                     <Link href={item.href} className="text-gray-100">
                     {item.name}
@@ -132,7 +135,7 @@ export default function Sidebar({navs,height}) {
             </nav>
              
 
-            <div className="w-36 h-36 text-white rounded-full mt-6  inline-flex items-center justify-center  "> 
+            <div className="w-12 h-12 text-white rounded-full mt-0  inline-flex items-center justify-center  "> 
              <Image
                 src="/images/spin.png"
                 width={500}

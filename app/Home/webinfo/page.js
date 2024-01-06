@@ -20,8 +20,8 @@ export default function Webinfo() {
                 height={100}
                 alt="spin"
                 />
-      <div className='px-8 grow'>
-         <div className='text-white font-bold text-3xl ml-6 mt-2'>
+      <div className='sm:px-8 px-4 grow'>
+         <div className='text-white font-bold sm:text-3xl text-2xl ml-6 mt-2'>
           Website Information
          </div>
 
@@ -38,19 +38,19 @@ export default function Webinfo() {
             <div className='font-bold'> Source code - </div>
             <div className='font-semibold'> hbjhbj jhjhbjbjbh hjbhjbhjbh</div>
           </div> */}
-
-          <table>
+         
+          <table className='mr-2'>
   
       <tbody>
         <tr>
           <td className='font-bold text-red-600 text-base pb-6'>Objectve</td>
           <td className='px-2 pb-6'>-</td>
-          <td className='font-semibold text-white  text-base pl-2'>This website contains Information about me and my software development skills. It is also showcasing the projects that i have created.</td>
+          <td className='font-semibold text-white  sm:text-base pl-2 text-sm'><p className='break-words'>This website contains Information about me and my software development skills. It is also showcasing the projects that i have created.</p></td>
         </tr>
         <tr>
-        <td className='font-bold text-white  text-base '>Tools used</td>
+        <td className='font-bold text-white  text-base sm:pb-6'>Tools used</td>
         <td className='px-2 pb-6'>-</td>
-        <td className='font-semibold text-white  text-base pl-6 pt-6'>
+        <td className='font-semibold text-white sm:text-base text-sm pl-6 pt-6'>
         <ul className='list-disc'>
           <li>Next.js</li>
           <li>Tailwind css</li>
@@ -61,15 +61,16 @@ export default function Webinfo() {
         <tr>
         <td className='font-bold text-white  text-base pt-6'>Source code</td>
         <td className='px-2'>-</td>
-          <td className='font-semibold text-red-500  text-base pl-3'>
-          <Link href={'https://github.com/Ejaz0000/porfolio_website.git'}>
+          <td className='font-semibold text-red-500  sm:text-base text-sm pl-3 break-all'>
+          <Link href={'https://github.com/Ejaz0000/porfolio_website.git'}
+          >
           https://github.com/Ejaz0000/porfolio_website.git
             </Link>
           </td>
         </tr>
       </tbody>
     </table>
-
+    
          </div>
         </div>
 

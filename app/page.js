@@ -21,14 +21,13 @@ export default function Myinfo() {
                 alt="spin"
                 />
       <div className='px-8 grow'>
-         <div className='text-white font-bold text-3xl ml-6 mt-2'>
+         <div className='text-white font-bold sm:text-3xl text-2xl ml-6 mt-2'>
           My Information
          </div>
 
          <div className='text-white ml-6 mt-8 text-base font-semibold'>
-          Hi! I am <span className='text-red-600 font-bold'>Ejaz Ahmed</span>. As a dedicated and aspiring software developer, I am passionate about my skill in Computer science engineering to create innovative and user-friendly software. Along with hands-on experience in web development, I enjoy complex problem solving with logical thinking and have a good practice of UI UX designing.
-
-Committed to continuous learning, I am eager to contribute to dynamic software development projects and make a meaningful impact in industry.
+         <p className='text-center sm:text-start'> Hi! I am <span className='text-red-600 font-bold'>Ejaz Ahmed</span>. As a dedicated and aspiring software developer, I am passionate about my skill in Computer science engineering to create innovative and user-friendly software. Along with hands-on experience in web development, I enjoy complex problem solving with logical thinking and have a good practice of UI UX designing.
+Committed to continuous learning, I am eager to contribute to dynamic software development projects and make a meaningful impact in industry.</p>
          </div>
         </div>
 

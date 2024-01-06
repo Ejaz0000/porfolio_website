@@ -43,10 +43,10 @@ className='grow m-2  rounded-xl flex flex-col bg-slate-500 bg-opacity-5'>
       </div>
       <div className='my-4'>
       <div className='text-red-600 font-bold'>Description</div>
-      <div className='font-semibold'>A proper replica of chorme dino game with gaming mechanisms add.</div>
+      <div className='font-semibold sm:text-base text-sm'>A proper replica of chorme dino game with gaming mechanisms add.</div>
       </div>
       <div className='text-red-600 font-bold'>Images</div>
-      <div className='ml-6 mt-4'>
+      <div className='sm:ml-6 mt-4'>
       <Image
             src="/images/dino_01.png"
             width={700}
@@ -55,7 +55,7 @@ className='grow m-2  rounded-xl flex flex-col bg-slate-500 bg-opacity-5'>
             alt="spin"
             />
       </div>
-      <div className='ml-6 mt-4'>
+      <div className='sm:ml-6 mt-4'>
       <Image
             src="/images/dino_02.png"
             width={700}
@@ -71,7 +71,7 @@ className='grow m-2  rounded-xl flex flex-col bg-slate-500 bg-opacity-5'>
         <tr>
           <td className='font-semibold text-base pb-6'>Features</td>
           <td className='px-2 pb-6'>-</td>
-          <td className='font-semibold text-white  text-base pl-6 pt-6'>
+          <td className='font-semibold text-white  sm:text-base text-sm pl-6 pt-6 '>
               <ul className='list-disc'>
               <li>Animation on game element</li>
               <li>Scoring</li>
@@ -82,7 +82,7 @@ className='grow m-2  rounded-xl flex flex-col bg-slate-500 bg-opacity-5'>
         <tr>
         <td className='font-bold text-white  text-base pb-6'>Tools used</td>
         <td className='px-2 pb-6'>-</td>
-        <td className='font-semibold text-white  text-base pl-6 pt-6'>
+        <td className='font-semibold text-white sm:text-base text-sm pl-6 pt-6'>
         <ul className='list-disc'>
           <li>HTML</li>
           <li>CSS</li>
@@ -93,7 +93,7 @@ className='grow m-2  rounded-xl flex flex-col bg-slate-500 bg-opacity-5'>
         <tr>
         <td className='font-bold text-white  text-base pt-4'>Source code</td>
         <td className='px-2 pt-4'>-</td>
-          <td className='font-semibold text-red-600  text-base pl-3 pt-4'>
+          <td className='font-semibold text-red-600  sm:text-base text-sm pl-3 pt-4 break-all'>
           <Link href={'https://github.com/Ejaz0000/Dino-game.git'}>
           https://github.com/Ejaz0000/Dino-game.git
             </Link>

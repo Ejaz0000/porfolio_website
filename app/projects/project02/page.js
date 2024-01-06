@@ -45,10 +45,10 @@ export default function Project02() {
       </div>
       <div className='my-4'>
       <div className='text-red-600 font-bold'>Description</div>
-      <div className='font-semibold'>A website laundry market place where agents can provide their laundry service. Client can order for the services by specifying cloth types and quantity.</div>
+      <div className='font-semibold sm:text-base text-sm'>A website laundry market place where agents can provide their laundry service. Client can order for the services by specifying cloth types and quantity.</div>
       </div>
       <div className='text-red-600 font-bold'>Images</div>
-      <div className='ml-6 mt-4'>
+      <div className='sm:ml-6 mt-4'>
       <Image
             src="/images/laundry_01.png"
             width={700}
@@ -57,7 +57,7 @@ export default function Project02() {
             alt="spin"
             />
       </div>
-      <div className='ml-6 mt-4'>
+      <div className='sm:ml-6 mt-4'>
       <Image
             src="/images/laundry_02.png"
             width={700}
@@ -66,7 +66,7 @@ export default function Project02() {
             alt="spin"
             />
       </div>
-      <div className='ml-6 mt-4'>
+      <div className='sm:ml-6 mt-4'>
       <Image
             src="/images/laundry_03.png"
             width={700}
@@ -75,7 +75,7 @@ export default function Project02() {
             alt="spin"
             />
       </div>
-      <div className='ml-6 mt-4'>
+      <div className='sm:ml-6 mt-4'>
       <Image
             src="/images/laundry_04.png"
             width={700}
@@ -84,7 +84,7 @@ export default function Project02() {
             alt="spin"
             />
       </div>
-      <div className='ml-6 mt-4'>
+      <div className='sm:ml-6 mt-4'>
       <Image
             src="/images/laundry_05.png"
             width={700}
@@ -97,9 +97,9 @@ export default function Project02() {
   
       <tbody>
         <tr>
-          <td className='font-semibold text-base pb-24'>Features</td>
-          <td className='px-2 pb-24'>-</td>
-          <td className='font-semibold text-white  text-base pl-6 pt-6'>
+          <td className='font-semibold text-base sm:pb-24 pb-20'>Features</td>
+          <td className='px-2 sm:pb-24 pb-20'>-</td>
+          <td className='font-semibold text-white  sm:text-base text-sm pl-6 pt-6'>
               <ul className='list-disc'>
               <li>Service selection</li>
               <li>Cloth type selection</li>
@@ -111,9 +111,9 @@ export default function Project02() {
           </td>
         </tr>
         <tr>
-        <td className='font-bold text-white  text-base pb-6'>Tools used</td>
-        <td className='px-2 pb-6'>-</td>
-        <td className='font-semibold text-white  text-base pl-6 pt-6'>
+        <td className='font-bold text-white  text-base sm:pb-6'>Tools used</td>
+        <td className='px-2 sm:pb-6'>-</td>
+        <td className='font-semibold text-white  sm:text-base text-sm pl-6 pt-6'>
         <ul className='list-disc'>
           <li>Next.js</li>
           <li>Tailwind Css</li>
@@ -124,7 +124,7 @@ export default function Project02() {
         <tr>
         <td className='font-bold text-white  text-base pt-4'>Source code</td>
         <td className='px-2 pt-4'>-</td>
-          <td className='font-semibold text-red-600  text-base pl-3 pt-4'>
+          <td className='font-semibold text-red-600  sm:text-base text-sm pl-3 pt-4 break-all'>
           <Link href={'https://github.com/Ejaz0000/Laundrypal.git'}>
           https://github.com/Ejaz0000/Laundrypal.git
             </Link>

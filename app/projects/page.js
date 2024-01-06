@@ -44,10 +44,10 @@ export default function Project01() {
           </div>
           <div className='my-4'>
           <div className='text-red-600 font-bold'>Description</div>
-          <div className='font-semibold'>A website to manage the clubs of a institution. Where students will be able to join clubs and communicate within a group through chatbox. Club presidents will be able to post notice and add events to calender which will be visivle to students.</div>
+          <div className='font-semibold sm:text-base text-sm'>A website to manage the clubs of a institution. Where students will be able to join clubs and communicate within a group through chatbox. Club presidents will be able to post notice and add events to calender which will be visivle to students.</div>
           </div>
           <div className='text-red-600 font-bold'>Images</div>
-          <div className='ml-6 mt-4'>
+          <div className='sm:ml-6 mt-4'>
           <Image
                 src="/images/club_01.png"
                 width={700}
@@ -56,7 +56,7 @@ export default function Project01() {
                 alt="spin"
                 />
           </div>
-          <div className='ml-6 mt-4'>
+          <div className='sm:ml-6 mt-4'>
           <Image
                 src="/images/club_02.png"
                 width={700}
@@ -65,7 +65,7 @@ export default function Project01() {
                 alt="spin"
                 />
           </div>
-          <div className='ml-6 mt-4'>
+          <div className='sm:ml-6 mt-4'>
           <Image
                 src="/images/club_03.png"
                 width={700}
@@ -74,7 +74,7 @@ export default function Project01() {
                 alt="spin"
                 />
           </div>
-          <div className='ml-6 mt-4'>
+          <div className='sm:ml-6 mt-4'>
           <Image
                 src="/images/club_04.png"
                 width={700}
@@ -89,7 +89,7 @@ export default function Project01() {
             <tr>
               <td className='font-semibold text-base pb-24'>Features</td>
               <td className='px-2 pb-24'>-</td>
-              <td className='font-semibold text-white  text-base pl-6 pt-6'>
+              <td className='font-semibold text-white  sm:text-base text-sm pl-6 pt-6 break-words'>
                   <ul className='list-disc'>
                   <li>Multiple clubs</li>
                   <li>Admin panel to manage president information</li>
@@ -103,7 +103,7 @@ export default function Project01() {
             <tr>
             <td className='font-bold text-white  text-base pb-6'>Tools used</td>
             <td className='px-2 pb-6'>-</td>
-            <td className='font-semibold text-white  text-base pl-6 pt-6'>
+            <td className='font-semibold text-white  sm:text-base text-sm pl-6 pt-0'>
             <ul className='list-disc'>
               <li>HTML</li>
               <li>CSS</li>
@@ -114,7 +114,7 @@ export default function Project01() {
             <tr>
             <td className='font-bold text-white  text-base pt-4'>Source code</td>
             <td className='px-2 pt-4'>-</td>
-              <td className='font-semibold text-red-600  text-base pl-3 pt-4'>
+              <td className='font-semibold text-red-600  sm:text-base text-sm pl-3 pt-4 break-all'>
               <Link href={'https://github.com/Ejaz0000/Club-management-web.git'}>
               https://github.com/Ejaz0000/Club-management-web.git
                 </Link>

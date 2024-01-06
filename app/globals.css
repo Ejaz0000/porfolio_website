@@ -22,6 +22,12 @@
     border-bottom: solid rgb(125, 211, 252) 4px;
 }
 
+.border-mobile_sidebar{
+    border-color: rgb(90, 27, 43);
+    border-right: solid rgb(125, 211, 252) 4px;
+    border-left: solid rgb(125, 211, 252) 4px;
+}
+
 .border-content{
 
     border-top-right-radius: 10px;
@@ -29,8 +35,8 @@
 
 .border-outer-rgb{
     border-color: rgb(90, 27, 43);
-    border-right: solid rgb(220, 38, 38) 4px;
-    border-left: solid rgb(220, 38, 38) 4px;
+    border-right: solid rgb(220, 38, 38) 8px;
+    border-left: solid rgb(220, 38, 38) 8px;
 }
 
 .sidebar_A{
@@ -39,4 +45,16 @@
 
 .sidebar_B{
     height: 660px;
+}
+
+.mobile_sidebar_A{
+    width: 240px;
+}
+
+.mobile_sidebar_B{
+    width:  345px;
+}
+
+.mobile_sidebar_C{
+    width:  180px;
 }
