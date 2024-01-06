@@ -70,6 +70,7 @@ export default function MoblieSidebar({navs,width}) {
                 
                 {navs.map((item)=>(
                     <motion.div
+                    key={item.name}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay:item.delay,duration: 0.6 }}
@@ -124,7 +125,7 @@ export default function MoblieSidebar({navs,width}) {
             className='flex flex-row gap-0'>
                 
                 {navs.map((item)=>(
-                    <div className='border-2  hover:bg-red-500  rounded-full py-1 px-2 ml-3 my-2 text-sm'
+                    <div key={item.name} className='border-2  hover:bg-red-500  rounded-full py-1 px-2 ml-3 my-2 text-sm'
                 >
                     <Link href={item.href} className="text-gray-100">
                     {item.name}

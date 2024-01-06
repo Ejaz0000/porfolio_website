@@ -70,6 +70,7 @@ export default function Sidebar({navs,height}) {
                 
                 {navs.map((item)=>(
                     <motion.div
+                    key={item.name}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay:item.delay,duration: 0.6 }}
@@ -121,7 +122,7 @@ export default function Sidebar({navs,height}) {
             className='flex flex-col gap-4'>
                 
                 {navs.map((item)=>(
-                    <div className='border-2 border-r-0  hover:bg-red-500  rounded-l-full py-2 pl-3 pr-0 ml-4'
+                    <div key={item.name} className='border-2 border-r-0  hover:bg-red-500  rounded-l-full py-2 pl-3 pr-0 ml-4'
                 >
                     <Link href={item.href} className="text-gray-100">
                     {item.name}
