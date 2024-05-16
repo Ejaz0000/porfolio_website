@@ -40,7 +40,16 @@ export default function Project06() {
           <div className='flex gap-2'>
             <div className='font-semibold'>Status</div>
             <div className='font-semibold'>-</div>
-            <div>Ongoing</div>
+            <div>Completed</div>
+          </div>
+          <div className='flex gap-2'>
+            <div className='font-semibold'>Apk</div>
+            <div className='font-semibold ml-4'>-</div>
+            <div className='font-semibold text-red-600  sm:text-base'>
+            <Link href={'https://drive.google.com/drive/folders/1XERAA4b0P8U6M2w37zMm0eQUcnlAClHh?usp=sharing'}>
+              Google dirve
+                </Link>
+            </div>
           </div>
           <div className='my-4'>
           <div className='text-red-600 font-bold'>Description</div>
