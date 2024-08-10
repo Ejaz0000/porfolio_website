@@ -24,14 +24,14 @@ export default function Project02() {
             />
   <div className='sm:px-8 px-4 grow'>
      <div className='text-white font-bold text-3xl ml-6 mt-2'>
-      Laundry Online Serive Management
+      Chat Web App
      </div>
 
      <div className='text-white ml-6 mt-8 text-base '>
       <div className='flex gap-2'>
         <div className='font-semibold'>Title</div>
         <div className='font-semibold ml-4'>-</div>
-        <div className='font-semibold'>Laundrypal</div>
+        <div className='font-semibold'>ChatApp</div>
       </div>
       <div className='flex gap-2'>
         <div className='font-semibold'>Type</div>
@@ -41,16 +41,16 @@ export default function Project02() {
       <div className='flex gap-2'>
         <div className='font-semibold'>Status</div>
         <div className='font-semibold'>-</div>
-        <div>Completed</div>
+        <div>Working on new features</div>
       </div>
       <div className='my-4'>
       <div className='text-red-600 font-bold'>Description</div>
-      <div className='font-semibold sm:text-base text-sm'>A website laundry market place where agents can provide their laundry service. Client can order for the services by specifying cloth types and quantity.</div>
+      <div className='font-semibold sm:text-base text-sm'>A chatting website with separete chatroom for mutiple users.</div>
       </div>
       <div className='text-red-600 font-bold'>Images</div>
       <div className='sm:ml-6 mt-4'>
       <Image
-            src="/images/laundry_01.png"
+            src="/images/chat01.png"
             width={700}
             height={700}
             className='border-4 border-sky-300 rounded-lg'
@@ -59,41 +59,17 @@ export default function Project02() {
       </div>
       <div className='sm:ml-6 mt-4'>
       <Image
-            src="/images/laundry_02.png"
+            src="/images/chat02.png"
             width={700}
             height={700}
             className='border-4 border-sky-300 rounded-lg'
             alt="spin"
             />
       </div>
-      <div className='sm:ml-6 mt-4'>
-      <Image
-            src="/images/laundry_03.png"
-            width={700}
-            height={700}
-            className='border-4 border-sky-300 rounded-lg'
-            alt="spin"
-            />
-      </div>
-      <div className='sm:ml-6 mt-4'>
-      <Image
-            src="/images/laundry_04.png"
-            width={700}
-            height={700}
-            className='border-4 border-sky-300 rounded-lg'
-            alt="spin"
-            />
-      </div>
-      <div className='sm:ml-6 mt-4'>
-      <Image
-            src="/images/laundry_05.png"
-            width={700}
-            height={700}
-            className='border-4 border-sky-300 rounded-lg'
-            alt="spin"
-            />
-      </div>
-      <table>
+      
+      
+      
+      <table className='mt-3'>
   
       <tbody>
         <tr>
@@ -101,12 +77,8 @@ export default function Project02() {
           <td className='px-2 sm:pb-24 pb-20'>-</td>
           <td className='font-semibold text-white  sm:text-base text-sm pl-6 pt-6'>
               <ul className='list-disc'>
-              <li>Service selection</li>
-              <li>Cloth type selection</li>
-              <li>Charge calculation</li>
-              <li>Comment section</li>
-              <li>Search box</li>
-              <li>Order notification</li>
+              <li>Live Chatroom</li>
+              <li>Multiple user communication</li>
             </ul>
           </td>
         </tr>
@@ -115,9 +87,9 @@ export default function Project02() {
         <td className='px-2 sm:pb-6'>-</td>
         <td className='font-semibold text-white  sm:text-base text-sm pl-6 pt-6'>
         <ul className='list-disc'>
-          <li>Next.js</li>
-          <li>Tailwind Css</li>
-          <li>Tailwind Components</li>
+          <li>React</li>
+          <li>Express.js</li>
+          <li>Socket.io</li>
         </ul>
         </td>
         </tr>
@@ -125,8 +97,8 @@ export default function Project02() {
         <td className='font-bold text-white  text-base pt-4'>Source code</td>
         <td className='px-2 pt-4'>-</td>
           <td className='font-semibold text-red-600  sm:text-base text-sm pl-3 pt-4 break-all'>
-          <Link href={'https://github.com/Ejaz0000/Laundrypal.git'}>
-          https://github.com/Ejaz0000/Laundrypal.git
+          <Link href={'https://github.com/Ejaz0000/chatroom.git'}>
+            https://github.com/Ejaz0000/chatroom.git
             </Link>
           </td>
         </tr>
